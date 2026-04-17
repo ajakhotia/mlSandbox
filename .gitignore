@@ -193,4 +193,13 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-credentials/openai_api.key
+# Secrets and credentials
+*.key
+*.pub
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.secret
+*.credentials

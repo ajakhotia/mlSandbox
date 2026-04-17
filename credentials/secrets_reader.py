@@ -11,7 +11,7 @@ def read_secret(secret_filename: str) -> str:
             return secret
 
     except FileNotFoundError:
-        raise FileNotFoundError(f'Cannon find the secret at {secret_file_path}')
+        raise FileNotFoundError(f'Cannot find the secret at {secret_file_path}')
 
     except Exception as error:
         raise Exception(f'An error occurred while attempting to read {secret_file_path}. Error: {error}')
